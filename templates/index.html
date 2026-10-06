@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleInterest Calculator</title>
+</head>
+<body>
+   <center>
+    <h1 style="color: blue; font-family: 'Times New Roman', Times, serif">Simple Interest Calculator</h1>
+    <form method="GET" >
+        <input type="number" step="any" name="p" id="" placeholder=" Principal Amount">
+        <input type="number" step="any" name="r" id="" placeholder=" Rate of Interest">
+        <input type="number" step="any" name="t" id="" placeholder=" Time Period">
+        <button type="submit">Calculate</button>
+    </form>
+   </center> 
+   <center>
+    <legend></legend>
+{# Display output#}
+   {% if result  %}
+   <hr>
+   <h3>result,</h3>
+   <span>Priciple: {{ p }}</span><br>
+   <span>Rate: {{ r }}</span><br>
+   <span>Time: {{ t }}</span><br>
+   <span>Simple Interest: {{ result }}</span><b><br>
+   <span>Total Amount: {{ total }}</b>
+
+   </span>
+   {% endif %}
+   </legend>
+   </center>
+</body>
+</html>
